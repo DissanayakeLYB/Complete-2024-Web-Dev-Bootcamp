@@ -1,33 +1,37 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    .flex-container{
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
-  </style>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="flex-container">
-    <div class="card" style="width: 18rem;">
-      <img src="./flower.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <!-- TODO 3: Change the image src to display the flower.jpg image. -->
-  </div>
+    <header>
+        <h1>Your Name</h1>
+    </header>
+    <section id="introduction">
+        <p>Your introduction here.</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <!-- Repeat the following div for each project -->
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <p>Description of project 1.</p>
+            <a href="http://project1.com">Link to project 1</a>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <!-- Repeat the following div for each testimonial -->
+        <div class="testimonial">
+            <p>"Testimonial text here."</p>
+            <p>- Name</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Your email address here.</p>
+    </section>
 </body>
-
 </html>
